@@ -22,6 +22,18 @@ router.get('/:id', (req, res) => {
 });
 
 //working
+router.delete('/:id', validateActionID, (req, res) => {
+    const id = req.params.id;
+    actionModel.remove(id)
+        .then(value => {
+            res.status(200).json(value);
+        })
+        .catch(err => {
+            res.status(500).json({ error: "Could not be deleted" });
+        });
+});
+
+//working
 router.post('/', validateAction, validatePostID, (req, res) => {
     actionModel.insert(req.body)
         .then(action => {
