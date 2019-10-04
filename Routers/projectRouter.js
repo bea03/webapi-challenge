@@ -21,6 +21,18 @@ router.get('/:id', (req, res) => {
 });
 
 //working
+router.get('/:id/actions', validateProjectID, (req, res) => {
+    const id = req.params.id;
+    projectModel.getProjectActions(id)
+        .then(actions => {
+            res.status(200).json(actions);
+        })
+        .catch(err => {
+            res.status(500).json({ error: "Could not get actions at this time" });
+        });
+});
+
+//working
 router.post('/', validateProject, (req, res) => {
     projectModel.insert(req.body)
         .then(project => {

@@ -44,6 +44,19 @@ router.post('/', validateAction, validatePostID, (req, res) => {
         });
 });
 
+//working
+router.put('/:id', validateActionID, validatePostID, validateAction, (req, res) => {
+    const id = req.params.id;
+    const changes = req.body;
+    actionModel.update(id, changes)
+    .then(action => {
+        res.status(200).json(action);
+    })
+    .catch(err => {
+        res.status(500).json({ error: "Unable to update action" });
+    });
+});
+
 //custom middleware
 function validateActionID(req, res, next) {
     const id = req.params.id;
