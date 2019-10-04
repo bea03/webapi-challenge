@@ -29,7 +29,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 - [X] Describe Middleware?
         **Middleware is the arm or assembly-line worker in the assembly-line analogy used in lecture. Middleware takes something from the "assembly-line" and does something with it before sending it on. Authentication is an example of a middleware use.**
 - [X] Describe a Resource?
-        **something the api returns to the client**
+        **"A resource is an object with a type, associated data, relationships to other resources, and a set of methods that operate on it." Everything is a resource according to the lecture. The different APIs for the app are resources accessed through a single URL**
 - [X] What can the API return to help clients know if a request was successful?
         **You can return a res obj such as res.status, res.end, etc**
 - [X] How can we partition our application into sub-applications?
@@ -68,8 +68,8 @@ The `projectModel.js` helper includes an extra method called `getProjectActions(
 
 ## Minimum Viable Product
 
-- [ ] Configure an _npm script_ named _"server"_ that will execute your code using _nodemon_. Make _nodemon_ be a development time dependency only, it shouldn't be deployed to production.
-- [ ] Configure an _npm script_ named _"start"_ that will execute your code using _node_.
+- [X] Configure an _npm script_ named _"server"_ that will execute your code using _nodemon_. Make _nodemon_ be a development time dependency only, it shouldn't be deployed to production.
+- [X] Configure an _npm script_ named _"start"_ that will execute your code using _node_.
 
 Design and build the necessary endpoints to:
 
