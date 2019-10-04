@@ -56,6 +56,8 @@ router.put('/:id', validateProjectID, validateProject, (req, res) => {
         });
 });
 
+//custom middleware
+
 //working
 function validateProject(req, res, next) {
     const projectBody = req.body;
