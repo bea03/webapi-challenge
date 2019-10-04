@@ -14,6 +14,7 @@ Go code!
 */
 const express = require('express');
 const helmet = require('helmet');
+const projectRouter = require('./Routers/projectRouter.js');
 
 //custom middleware
 function logger(req, res, next) {
@@ -29,6 +30,7 @@ server.use(express.json());
 server.use(helmet());
 server.use(logger);
 
+server.use('/api/projects', logger, projectRouter);
 
 server.get('/', (req, res) => {
     res.send(`
