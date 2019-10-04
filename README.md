@@ -39,7 +39,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 Follow these steps to set up and work on your project:
 
 - [x] Create a forked copy of this project.
-- [x] Add your _Project Manager_ as collaborator on Github.
+- [x] Add your _TL_ as collaborator on Github.
 - [x] Clone your forked version of the Repository.
 - [x] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
 - [x] Implement the project on this Branch, committing changes regularly.
@@ -48,8 +48,8 @@ Follow these steps to set up and work on your project:
 Follow these steps for completing your project.
 
 - [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master on your fork. **Please don't merge your own pull request.**
-- [ ] Add your _Project Manager_ as a Reviewer on the Pull-request
-- [ ] Your _Project Manager_ will count the challenge as done by merging the branch into _master_.
+- [ ] Add your _TL_ as a Reviewer on the Pull-request
+- [ ] Your _TL_ will count the challenge as done by merging the branch into _master_.
 
 ## Database Persistence Helpers
 
